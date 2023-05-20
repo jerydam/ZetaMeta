@@ -1,8 +1,8 @@
 import { task } from "hardhat/config";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import * as dotenv from "dotenv";
-import { drip } from "@zetachain/faucet-cli/dist/commands/drip";
-import { VALID_CHAINS } from "@zetachain/faucet-cli/dist/constants";
+import { drip } from "@zetachain/faucet-cli/dist/commands/drip.js";
+import { VALID_CHAINS } from "@zetachain/faucet-cli/dist/constants.js";
 
 const walletError = `
 ❌ Error: Wallet address not found.
