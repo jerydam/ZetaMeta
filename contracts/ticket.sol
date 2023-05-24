@@ -1,12 +1,15 @@
-//SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.15;
+import "@zetachain/zevm-protocol-contracts/contracts/interfaces/IZRC20.sol";
+import "@zetachain/zevm-protocol-contracts/contracts/interfaces/zContract.sol";
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin-contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin-contracts/utils/Counters.sol";
 import "./IPoap.sol";
 import "./poap.sol";
 
+// Rest of your code...
 
 contract iTicketing is ERC721, ERC721URIStorage {
     using Counters for Counters.Counter;
