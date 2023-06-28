@@ -47,7 +47,8 @@ contract Poap is ERC721, ERC721URIStorage {
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721)
+        override(ERC721URIStorage, ERC721)
+
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
